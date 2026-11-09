@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anggun Jadwal Kuliah</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color:  #333;
+        }
+
+        .container {
+            max-width: 480px;
+            margin: 0 auto;
+            background-color: #fdfdfd;
+            min-height: 100vh;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        header {
+            background-color: #d85a7f;
+            color: white;
+            padding: 16px 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-align: left;
+        }
+
+        header img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid white;
+            margin: 0;
+        }
+
+        header h2 {
+            font-size: 1.2rem;
+            line-height: 1.4;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #ec8ca9;
+            padding: 12px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            padding: 8px 12px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        main {
+            padding: 20px 16px;
+        }
+
+        section {
+            background-color: white;
+            border: 1.5px solid #ddd;
+            border-left: 5px solid #d85a7f;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 16px;
+            margin-bottom: 20px;
+            scroll-margin-top: 100px; /* Adjust based on nav height */
+        }
+
+        section h3 {
+            color: #d85a7f;
+            margin-bottom: 12px;
+            font-size: 15px;
+            border-bottom: 1px solid #d85a7f;
+            padding-bottom: 8px;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            padding: 10px 12px;
+            margin-bottom: 8px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        li:last-child {
+            margin-bottom: 0;
+        }
+
+        .time, .room {
+            font-size: 12px;
+            color: #555;
+            font-weight: 500;
+        }
+
+        .course {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .lecture {
+            font-weight: 500;
+            font-style: italic;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="anggun.jpg" alt="anggun" width="80" height="80">
+            <h2>Jadwal Kuliah Semester 5<br>Anggun Andriani Pelletimu</h2>
+        </header>
+
+        <nav>
+            <a href="#Senin">Senin</a>
+            <a href="#Selasa">Selasa</a>
+            <a href="#Rabu">Rabu</a>
+            <a href="#Kamis">Kamis</a>
+        </nav>
+
+        <main>
+            <section id="Senin">
+                <article>
+                    <h3>Senin</h3>
+                    <ul>
+                        <li>
+                            <span class="time">⏱️07.00 - 09.30</span>
+                            <span class="room">R.5.3-6</span>
+                            <span class="course">Sistem Operasi</span>
+                            <span class="lecture">Reko Syarif H M.KOM.</span>
+                        </li>
+                        <li>
+                            <span class="time">⏱️09.30 - 12.00</span>
+                            <span class="room">R.5.3-6</span>
+                            <span class="course">Teori Bahasa dan Automata</span>
+                            <span class="lecture">Rendi Prasetya S.Si., M.Kom.</span>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+            <section id="Selasa">
+                <article>
+                    <h3>Selasa</h3>
+                    <ul>
+                        <li>
+                            <span class="time">⏱️07.00 - 09.30</span>
+                            <span class="room">R.5.3-6</span>
+                            <span class="course">Ilmu Sosial dan Budaya Dasar</span>
+                            <span class="lecture">Tuty Kurniawaty Saragih S.Sos., M.Pd.</span>
+
+                        </li>
+                        <li>
+                            <span class="time">⏱️09.30 - 12.00</span>
+                            <span class="room">R.5.3-6</span>
+                            <span class="course">Pemrograman Berorientasi Objek</span>
+                            <span class="lecture">Ulfa Pauziah M.Kom.</span>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+            <section id="Rabu">
+                <article>
+                    <h3>Rabu</h3>
+                    <ul>
+                        <li>
+                            <span class="time">⏱️10.50 - 12.30</span>
+                            <span class="room">R.5.3-6</span>
+                            <span class="course">Kecakapan Antar Personal (Interpersonal Skill)</span>
+                            <span class="lecture">Sri Mardiyati S.Kom., M.T</span>
+                        </li>
+                        <li>
+                            <span class="time">⏱️12.30 - 14.10</span>
+                            <span class="room">R.5.3-6</span>
+                            <span class="course">Statistika Lanjut</span>
+                            <span class="lecture">Sri Rezeki M.Pd.</span>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+            <section id="Kamis">
+                <article>
+                    <h3>Kamis</h3>
+                    <ul>
+                        <li>
+                            <span class="time">⏱️07.30 - 09.10</span> 
+                            <span class="room">R.5.3-4</span>
+                            <span class="course">Kewirausahaan</span>
+                            <span class="lecture">Dr. Sugeng Haryono M.Pd.</span>
+                        </li>
+                        <li>
+                            <span class="time">⏱️09.10 - 10.50</span>
+                            <span class="room">R.5.3-4</span>
+                            <span class="course">Pemrograman Web Dasar</span>
+                            <span class="lecture">Tri Yani Akhirina M.Kom.</span>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
