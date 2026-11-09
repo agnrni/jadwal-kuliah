@@ -14,7 +14,7 @@ Proyek halaman web statis untuk menampilkan jadwal perkuliahan harian mahasiswa 
 
 ## 🚀 Live Demo
 Website ini dapat diakses secara langsung melalui GitHub Pages:
-👉 **[Lihat Website Jadwal Kuliah](https://agnrni.github.io/jadwal-kuliah/)**
+👉 **[Lihat Website Jadwal Kuliah](https://agnrni.github.io/jadwal-kuliah/html/jadwal-kuliah/)**
 
 ---
 Dibuat oleh **Anggun Andriani Pelletimu** — Mahasiswa S1 Teknik Informatika
